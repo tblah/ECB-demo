@@ -24,3 +24,5 @@ convert ecb.ppm out.png
 
 rm ecb ecb.ppm imageBody imageHeader.txt image.ppm
 
+montage -geometry +0+0 -bordercolor black -label "AES-ECB is bad" $1 out.png out.png
+
